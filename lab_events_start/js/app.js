@@ -25,9 +25,9 @@ const handleForm = function () {
   const newCat = document.createElement('h5');
   
   newListItem.classList.add('item');
-  newTitle.textContent = `${this.title.value}`;
-  newAuthor.textContent = `${this.author.value}`;
-  newCat.textContent = `${this.category.value}`;
+  newTitle.textContent = this.title.value;
+  newAuthor.textContent = this.author.value;
+  newCat.textContent = this.category.value;
   
   const list = document.querySelector('#reading-list');
   list.appendChild(newListItem);

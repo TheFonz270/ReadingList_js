@@ -1,3 +1,121 @@
 body {
   font-family: Palatino;
+  background-color: antiquewhite;
 }
+
+ul {
+  display:flex;
+  -ms-flex-align: center;
+  justify-content: space-evenly;
+  flex-wrap:wrap;
+}
+
+ul li {
+  list-style:none;
+}
+
+input, select {
+  padding: 3px;
+  margin: 5px 0;
+  display:block;
+}
+
+input {
+  width:250px;
+}
+
+select {
+  width: 260px;
+}
+
+form > div > div {
+  display:flex;
+  flex-direction: column;
+  margin-bottom:10px;
+
+}
+
+#Delete {
+  width:250px;
+  background-color:red;
+  color:white;
+  border:1px solid #222;
+  border-radius:3px;
+  padding:4px;
+  margin-top:5px;
+}
+
+#Delete:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px red;
+  color: red;
+  border: 1px solid red;
+}
+
+
+.item {
+  padding:10px 10px 10px 20px;
+  background-color:lightgray;
+  border-top: 3px solid green;
+  border-left: 3px solid blue;
+  border-right: 3px solid red;
+  border-bottom: 3px solid yellow;
+  border-radius:25px;
+  /* border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%; */
+  width:300px;
+  margin:15px;
+}
+
+.item:hover {
+  background-color:#ccc;
+}
+
+h1 {
+  background-image: linear-gradient(antiquewhite, red, antiquewhite);
+  width: fit-content;
+  display:block;
+  background: -webkit-linear-gradient(red, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+
+}
+
+
+
+h3 {
+  font-size:24px;
+  text-decoration:underline
+}
+
+h4 {
+  font-size:21px;
+  color:#111
+}
+
+h5 {
+  font-size:18px;
+  color:#222
+}
+
+.item h3 {
+
+}
+
+@media only screen and (max-width: 420px) {
+
+  ul {
+    display:flex;
+    -ms-flex-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+}
+  
